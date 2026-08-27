@@ -1,3 +1,4 @@
+# git pull origin main 테스트
 students = []
 
 while True:
