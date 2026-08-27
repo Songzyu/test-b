@@ -9,6 +9,9 @@ while True:
     cmd = int(input("실행할 프로그램 번호를 입력하시오."))
 
     if cmd == 1:
+        if len(students) >= 5:
+             print("학생 수가 초과되었습니다. 관리자에게 문의하시기 바립니다.")
+             continue
         name = input("학생 이름을 입력하시오.")
         
         age = input("학생 나이를 입력하시오.")
