@@ -22,10 +22,16 @@ while True:
         if len(students) == 0:
             print("조회할 학생 정보가 없습니다.")
             continue
+
+        for i in range(len(students)):
+            print(f"학생 이름은 {students[i][0]}이고, 학생 나이는 {students[i][1]}살이고, 학생 점수는 {students[i][2]}점 입니다.")
     elif cmd == 3:
         if len(students) == 0:
                 print("조회할 학생 정보가 없습니다.")
                 continue
+        cmd2 = int(input("삭제할 학생 번호를 입력하시오."))
+        cmd2 -= 1
+        students.pop(cmd2)
 
     else:
          print("프로그램을 종료합니다.")
